@@ -1,4 +1,4 @@
-package lambda2;
+package lambda.lambda2;
 
 interface Executable{
     void execute();
