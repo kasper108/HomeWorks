@@ -2,7 +2,14 @@ package tasks.task1_3D_figures;
 
 public class Main {
     public static void main(String[] args) {
-        Pyramid pyramid = new Pyramid(4,3);
-        System.out.println(pyramid.getVolume());
+        Ball ball = new Ball(4.5);
+        Cylinder cylinder = new Cylinder(2, 2);
+        Pyramid pyramid = new Pyramid(100, 100);
+
+        Box box = new Box(1000);
+
+        System.out.println(box.add(ball)); // ok
+        System.out.println(box.add(cylinder)); // ok
+        System.out.println(box.add(pyramid)); // failed
     }
 }
